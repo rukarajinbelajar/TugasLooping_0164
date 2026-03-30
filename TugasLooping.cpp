@@ -27,3 +27,11 @@ while(i < n){
 }
 return true;
 }
+
+//fungsi cek bonacci
+bool cekFibonacci(int n){
+    int a = 0;
+    int b = 1;
+    int c = 2;
+    
+}
