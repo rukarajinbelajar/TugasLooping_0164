@@ -11,3 +11,7 @@ void input(){
     cout<<"Masukkan angka = ";
     cin>>angka;
 }
+
+//fungsi cek bilangan prima
+bool cekPrima(int n){
+}
