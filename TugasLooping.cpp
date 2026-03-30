@@ -14,4 +14,7 @@ void input(){
 
 //fungsi cek bilangan prima
 bool cekPrima(int n){
+    if(n<=1){
+        return false;
+    }
 }
