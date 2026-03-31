@@ -2,37 +2,30 @@
 using namespace std;
 
 //deklarasi variabel global
-int angka;
+int n;
 int pilihan;
 bool hasil;
 
-//prosedur input angka
-void input(){
-    cout<<"Masukkan angka = ";
-    cin>>angka;
-}
-
 //fungsi cek bilangan prima
-bool cekPrima(int n){
-    if(n<=1) return false;
+bool cekPrima(int x) {
+    if (x <= 1) return false;
+
     int i = 2;
-    while(i < n){
-    if (n%i==0){
-        return false;
+    while (i < x) {
+        if (x % i == 0) {
+            return false;
+        }
+        i++;
     }
-    i++;
-}
-return true;
+    return true;
 }
 
 //fungsi cek bonacci
-bool cekFibonacci(int n){
-    int a = 0;
-    int b = 1;
-    int c;
+bool cekFibonacci(int x){
+    int a = 0,b = 1,c;
 
-    while(a<=n){
-        if(a==n){
+    while(a<=x){
+        if(a==x){
             return true;
         }
         c = a + b;
@@ -40,6 +33,31 @@ bool cekFibonacci(int n){
         b = c;
     }
             return false;
+}
+
+//prosedur input angka
+void input(){
+    cout<<"Masukkan angka : ";
+    cin>>n;
+}
+
+//prosedur output
+void outputPrima(){
+    if(cekPrima(n)){
+        cout<<n <<" adalah Bilangan Prima"<<endl;
+    }
+    else{
+        cout<<n <<" bukan Bilangan Prima"<<endl;
+    }
+}
+
+void outputFibonacci(){
+    if (cekFibonacci(n)){
+        cout<<n <<" termasuk deret Fibonacci"<<endl;
+    }
+    else{
+        cout<<n <<" bukan termasuk bilangan Fibonacci"<<endl;
+    }
 }
 
 //prosedur menu
@@ -52,29 +70,11 @@ void menu(){
     cin>>pilihan;
 }
 
-//prosedur output
-void outputPrima(){
-    if(cekPrima){
-        cout<<"Bilangan tersebut adalah Bilangan Prima\n";
-    }
-    else{
-        cout<<"Bilangan tersebut bukan Bilangan Prima\n";
-    }
-}
-
-void outputFibonacci(){
-    if (cekFibonacci){
-        cout<<"Bilangan tersebut termasuk deret Fibonacci\n";
-    }
-    else{
-        cout<<"Bilangan tersebut bukan termasuk bilangan Fibonacci\n";
-    }
-}
-
 //program utama
 int main(){
     while(true){
         menu();
+        
         switch(pilihan){
         case 1:
             input();
