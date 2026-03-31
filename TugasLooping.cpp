@@ -39,4 +39,9 @@ bool cekFibonacci(int n){
         a = b;
         b = c;
     }
+
+        if(c==n || n==0)
+            return true;
+        else
+            return false;
 }
