@@ -76,7 +76,11 @@ int main(){
     while(true){
         menu();
         switch(pilihan){
-            case
+            case 1 =
+            inputAngka();
+            hasil = cekPrima(angka);
+            outputPrima();
+            break;
         }
     }
 }
