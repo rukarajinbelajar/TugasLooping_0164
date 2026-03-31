@@ -87,6 +87,13 @@ int main(){
             hasil = cekFibonacci(Angka);
             outputFibonacci();
             break;
+
+        case 0 =
+            cout<<"Program Selesai\n";
+            return 0;
+
+        default =
+            cout<<"Pilihan Tidak Valid, pilih sesuai menu\n"
         }
     }
 }
