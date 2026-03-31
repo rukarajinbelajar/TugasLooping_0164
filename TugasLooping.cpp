@@ -76,19 +76,17 @@ int main(){
     while(true){
         menu();
         switch(pilihan){
-        case 1 =
-            inputAngka();
-            hasil = cekPrima(angka);
+        case 1:
+            input();
             outputPrima();
             break;
         
-        case 2 =
-            inputAngka();
-            hasil = cekFibonacci(Angka);
+        case 2:
+            input();
             outputFibonacci();
             break;
 
-        case 0 =
+        case 0:
             cout<<"Program Selesai\n";
             return 0;
 
