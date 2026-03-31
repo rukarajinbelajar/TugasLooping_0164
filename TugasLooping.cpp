@@ -14,12 +14,9 @@ void input(){
 
 //fungsi cek bilangan prima
 bool cekPrima(int n){
-    if(n<=1){
-        return false;
-    }
-
-int i = 2;
-while(i < n){
+    if(n<=1) return false;
+    int i = 2;
+    while(i < n){
     if (n%i==0){
         return false;
     }
@@ -32,17 +29,16 @@ return true;
 bool cekFibonacci(int n){
     int a = 0;
     int b = 1;
-    int c = 2;
+    int c;
 
-    while(c<n){
+    while(a<=n){
+        if(a==n){
+            return true;
+        }
         c = a + b;
         a = b;
         b = c;
     }
-
-        if(c==n || n==0)
-            return true;
-        else
             return false;
 }
 
@@ -58,17 +54,21 @@ void menu(){
 
 //prosedur output
 void outputPrima(){
-    if(hasil==true)
+    if(cekPrima){
         cout<<"Bilangan tersebut adalah Bilangan Prima\n";
-    else
+    }
+    else{
         cout<<"Bilangan tersebut bukan Bilangan Prima\n";
+    }
 }
 
 void outputFibonacci(){
-    if (hasil==true)
+    if (cekFibonacci){
         cout<<"Bilangan tersebut termasuk deret Fibonacci\n";
-    else
+    }
+    else{
         cout<<"Bilangan tersebut bukan termasuk bilangan Fibonacci\n";
+    }
 }
 
 //program utama
@@ -91,7 +91,7 @@ int main(){
             return 0;
 
         default:
-            cout<<"Pilihan Tidak Valid, pilih sesuai menu\n"
+            cout<<"Pilihan Tidak Valid!\n";
         }
     }
 }
