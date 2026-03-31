@@ -55,3 +55,13 @@ void menu(){
     cout<<"Pilih Menu = ";
     cin>>pilihan;
 }
+
+//prosedur output
+void outputPrima(){
+    if(hasil==true)
+        cout<<"Bilangan tersebut adalah Bilangan Prima\n";
+    else
+        cout<<"Bilangan tersebut bukan Bilangan Prima\n"
+}
+
+
