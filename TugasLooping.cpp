@@ -76,10 +76,16 @@ int main(){
     while(true){
         menu();
         switch(pilihan){
-            case 1 =
+        case 1 =
             inputAngka();
             hasil = cekPrima(angka);
             outputPrima();
+            break;
+        
+        case 2 =
+            inputAngka();
+            hasil = cekFibonacci(Angka);
+            outputFibonacci();
             break;
         }
     }
