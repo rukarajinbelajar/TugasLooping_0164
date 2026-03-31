@@ -64,7 +64,7 @@ void outputPrima(){
         cout<<"Bilangan tersebut bukan Bilangan Prima\n";
 }
 
-void outpuFibonacci(){
+void outputFibonacci(){
     if (hasil==true)
         cout<<"Bilangan tersebut termasuk deret Fibonacci\n";
     else
