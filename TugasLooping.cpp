@@ -70,3 +70,13 @@ void outpuFibonacci(){
     else
         cout<<"Bilangan tersebut bukan termasuk bilangan Fibonacci\n";
 }
+
+//program utama
+int main(){
+    while(true){
+        menu();
+        switch(pilihan){
+            case
+        }
+    }
+}
