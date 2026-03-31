@@ -49,4 +49,5 @@ bool cekFibonacci(int n){
 //prosedur menu
 void menu(){
     cout<<"\n===MENU PROGRAM==="<<endl;
+    cout<<"1. Cek Bilangan Prima"<<endl;
 }
