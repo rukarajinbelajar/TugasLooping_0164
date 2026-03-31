@@ -90,7 +90,7 @@ int main(){
             cout<<"Program Selesai\n";
             return 0;
 
-        default =
+        default:
             cout<<"Pilihan Tidak Valid, pilih sesuai menu\n"
         }
     }
