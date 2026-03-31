@@ -45,3 +45,8 @@ bool cekFibonacci(int n){
         else
             return false;
 }
+
+//prosedur menu
+void menu(){
+    cout<<"\n===MENU PROGRAM==="<<endl;
+}
